@@ -1,0 +1,21 @@
+@mixin media-query($min-width) {
+  @media all and  (min-device-width: #{$min-width}) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
+@mixin flex-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

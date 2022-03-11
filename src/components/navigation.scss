@@ -1,0 +1,22 @@
+@import "../assets/scss/styles.scss";
+
+.navigation {
+  @include flex-wrap();
+  width: 67.5%;
+  &__list {
+    @include flex-wrap();
+    width: 60%;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-weight: 700;
+    text-decoration: none;
+    &:hover,
+    &:visited {
+      color: white;
+    }
+  }
+}

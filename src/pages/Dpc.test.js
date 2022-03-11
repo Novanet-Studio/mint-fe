@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import ListedCardPage from './ListedCardPage';
+import Dpc from './Dpc';
 
 test('renders learn react link', () => {
-  render(<ListedCardPage />);
+  render(<Dpc />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
