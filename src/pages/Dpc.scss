@@ -1,23 +1,6 @@
 @import "../assets/scss/styles.scss";
 
 .container {
-  background: -webkit-radial-gradient(0%, $black, $purple);
-  background: radial-gradient(circle at 0%, $black, $purple);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App {
-    &-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: radial-gradient(90% 90% at bottom right , $black, $purpleOpacity0);
+  min-height: 100vh;
 }

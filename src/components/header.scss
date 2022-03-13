@@ -4,8 +4,9 @@
   @include flex-center();
   width: 90%;
   margin: 0 auto;
+  padding-top: 2vh;
   font-size: calc(10px + 1vmin);
-  color: white;
+  
 
   &__logo {
     @include flex-wrap();
@@ -14,37 +15,13 @@
     pointer-events: none;
   }
 
-  &__emblema {
-  }
-
   &__rrss {
     width: 10%;
-  }
-
-  &__icon {
-    width: 1.5vw;
-    height: 1.5vw;
-    padding: 0.25vw;
-    margin: 0.5vw;
-    color: $purple;
-    background-color: rgba($color: white, $alpha: 0.6);
-    border-radius: 50%;
-  }
+  }  
 
   &__buttons {
     @include flex-column();
     width: 12.5%;
   }
-
-  &__action-a {
-    color: white;
-    background-color: $lightpurple;
-    border: none;
-  }
-
-  &__action-b {
-    color: white;
-    background-color: transparent;
-    
-  }
+  
 }

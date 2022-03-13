@@ -1,0 +1,46 @@
+@import "../assets/scss/styles.scss";
+
+.hero {
+  @include flex-wrap();
+  margin: 5vh auto 5vh;
+  width: 60%;
+
+  &__media {
+    width: 40%;
+  }
+  &__data {
+    @include flex-column();
+    width: 60%;
+    padding-left: 2vh;
+    box-sizing: border-box;
+  }
+
+  &__tier {
+    &-title {
+      color: $lightpurple;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &-score {
+      margin: 0;
+    }
+  }
+
+  &__listing {
+    margin-top: auto;
+    &-title {
+      margin-bottom: 0;
+    }
+    &-value {
+      margin-top: 0;
+      font-weight: 700;
+    }
+    &-icon {
+      color: $lightpurple;
+    }
+  }
+
+  &__buttons {
+    margin-top: 0 auto;
+  }
+}

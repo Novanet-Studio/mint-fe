@@ -1,0 +1,13 @@
+@import "../assets/scss/styles.scss";
+
+
+.footer {
+    @include flex-center();
+    flex-direction: column;
+    
+
+    &__legal {
+        text-align: center;
+        opacity: 0.5;
+    }
+}
