@@ -12,19 +12,21 @@ const Header = () => {
       <Navigation />
       <div className="header__rrss">
         <FontAwesomeIcon
-          className="icon"
+          className="icon header__icon"
           icon={["fab", "twitter"]}
           size="lg"
         />
         <FontAwesomeIcon
-          className="icon"
+          className="icon header__icon"
           icon={["fab", "discord"]}
           size="lg"
         />
       </div>
       <div className="header__buttons">
         <button className="button button__action--fill">jgdfkl98</button>
-        <button className="button button__action--outline">List you card</button>
+        <button className="button button__action--outline">
+          List you card
+        </button>
       </div>
     </header>
   );

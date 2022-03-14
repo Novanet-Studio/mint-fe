@@ -1,0 +1,44 @@
+@import "../assets/scss/styles.scss";
+
+.infoBox {
+  @include flex-wrap();
+  background-color: $blackOpacity03;
+  margin-top: 3vh;
+  padding: 4vh 3vw 3vh;
+
+  &__left {
+    width: 20%;
+  }
+
+  &__right {
+    width: 80%;
+  }
+
+  &__title,
+  &__subtitle {
+    color: $lightpurple;
+  }
+
+  &__title {
+    margin: 0 0 1.5vh;
+  }
+
+  &__subtitle {
+    margin: 1.5vh 0 0;
+  }
+
+  &__subtitleText {
+    margin: 0;
+  }
+
+  &__icon {
+    margin: 0.5vw 0.5vw 0 0;
+    padding: 0.25vw;
+    background-color: rgba($color: white, $alpha: 1);
+  }
+
+  &__description {
+    margin-top: 0;
+    opacity: 0.6;
+  }
+}

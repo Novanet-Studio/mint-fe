@@ -1,11 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./hero.scss"
+import "./hero.scss";
 
 const Hero = (props) => {
   return (
     <div className="hero">
       <div className="hero__media">
-        <img className="hero__media-image" src={props.media} alt="Player card" />
+        <img
+          className="hero__media-image"
+          src={props.media.heroImage}
+          alt="Player card"
+        />
       </div>
       <div className="hero__data">
         <div className="hero__share">
@@ -13,8 +17,8 @@ const Hero = (props) => {
             className="hero__icon"
             icon={["fa", "share-nodes"]}
             size="lg"
-          />
-          {" "}Share
+          />{" "}
+          Share
         </div>
         <h1 className="hero__title">{props.title}</h1>
         <div className="hero__tier">
@@ -33,8 +37,12 @@ const Hero = (props) => {
           </p>
         </div>
         <div className="hero__buttons">
-          <button className="button button__action--fill">Update listing</button>
-          <button className="button button__action--outline">Remove listing</button>
+          <button className="button button__action--fill">
+            Update listing
+          </button>
+          <button className="button button__action--outline">
+            Remove listing
+          </button>
         </div>
       </div>
     </div>

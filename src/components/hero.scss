@@ -3,15 +3,16 @@
 .hero {
   @include flex-wrap();
   margin: 5vh auto 5vh;
-  width: 60%;
 
   &__media {
+    display: flex;
     width: 40%;
+    justify-content: flex-end;
   }
   &__data {
     @include flex-column();
     width: 60%;
-    padding-left: 2vh;
+    padding-left: 3vh;
     box-sizing: border-box;
   }
 

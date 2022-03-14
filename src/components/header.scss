@@ -6,7 +6,6 @@
   margin: 0 auto;
   padding-top: 2vh;
   font-size: calc(10px + 1vmin);
-  
 
   &__logo {
     @include flex-wrap();
@@ -17,11 +16,16 @@
 
   &__rrss {
     width: 10%;
-  }  
+  }
 
   &__buttons {
     @include flex-column();
     width: 12.5%;
   }
-  
+
+  &__icon {
+    margin: 0.5vw;
+    padding: 0.25vw;
+    background-color: rgba($color: white, $alpha: 0.5);
+  }
 }

@@ -3,11 +3,16 @@
 
 .footer {
     @include flex-center();
-    flex-direction: column;
-    
+    flex-direction: column;   
 
     &__legal {
         text-align: center;
         opacity: 0.5;
     }
+
+    &__icon {
+        margin: 0.5vw;
+        padding: 0.25vw;
+        background-color: rgba($color: white, $alpha: 0.5);
+      }
 }
