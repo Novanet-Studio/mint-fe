@@ -15,9 +15,16 @@
     font-weight: 700;
     text-decoration: none;
     color: white;
+    padding-bottom: .5vh;
+
     &:hover,
     &:visited {
       color: white;
     }
+  }
+  .active {
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 2px 0
   }
 }

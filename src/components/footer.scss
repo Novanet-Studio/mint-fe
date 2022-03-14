@@ -1,18 +1,19 @@
 @import "../assets/scss/styles.scss";
 
-
 .footer {
-    @include flex-center();
-    flex-direction: column;   
+  @include flex-center();
+  flex-direction: column;
+  margin-top: 8vh;
+  padding-bottom: 4vh;
 
-    &__legal {
-        text-align: center;
-        opacity: 0.5;
-    }
+  &__legal {
+    text-align: center;
+    opacity: 0.5;
+  }
 
-    &__icon {
-        margin: 0.5vw;
-        padding: 0.25vw;
-        background-color: rgba($color: white, $alpha: 0.5);
-      }
+  &__icon {
+    margin: 0.5vw;
+    padding: 0.25vw;
+    background-color: rgba($color: white, $alpha: 0.5);
+  }
 }

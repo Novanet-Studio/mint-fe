@@ -17,8 +17,8 @@ const Hero = (props) => {
             className="hero__icon"
             icon={["fa", "share-nodes"]}
             size="lg"
-          />{" "}
-          Share
+          />
+          &nbsp; Share
         </div>
         <h1 className="hero__title">{props.title}</h1>
         <div className="hero__tier">
@@ -38,11 +38,13 @@ const Hero = (props) => {
         </div>
         <div className="hero__buttons">
           <button className="button button__action--fill">
-            Update listing
+            {props.buttonA}
           </button>
-          <button className="button button__action--outline">
-            Remove listing
-          </button>
+          {props.buttonB ? (
+            <button className="button button__action--outline">
+              {props.buttonB}
+            </button>
+          ) : null}
         </div>
       </div>
     </div>

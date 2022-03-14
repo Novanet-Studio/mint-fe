@@ -1,0 +1,48 @@
+@import "../assets/scss/styles.scss";
+
+.card {
+  flex: 0 0 18%;
+  padding: 3vh;
+  background-color: $blackOpacity03;
+  border-radius: 20px;
+
+  &__name {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  &__league,
+  &__level {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__tier {
+    &-title,
+    &-value {
+      margin-bottom: 0;
+    }
+    &-title {
+      margin-top: 1vh;
+      color: $lightpurple;
+    }
+    &-value {
+      margin-top: 0;
+    }
+  }
+
+  &__value {
+    font-weight: 700;
+    margin-top: 1vh;
+    margin-bottom: 0;
+  }
+
+  &__average {
+    font-size: small;
+    margin-top: 0;
+  }
+
+  &__button {
+      margin-top: 1vh !important;
+  }
+}

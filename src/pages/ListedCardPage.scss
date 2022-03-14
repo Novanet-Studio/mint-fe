@@ -1,0 +1,23 @@
+@import "../assets/scss/styles.scss";
+
+.cards {
+  @include flex-wrap();
+  margin-top: 6vh;
+  justify-content: space-between;
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
+
+  &__button {
+    &-container {
+      @include flex-center();
+      width: 100%;
+      margin-top: 3vh;
+    }
+
+    width: 7vw;
+  }
+}

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navigation.scss";
 
 const Navigation = () => {
@@ -6,24 +6,40 @@ const Navigation = () => {
     <nav className="navigation">
       <ul className="navigation__list">
         <li>
-          <Link className="navigation__item" to="/">
+          <NavLink
+            className="navigation__item"
+            activeClassName="active"
+            to="/"
+          >
             Marketplace
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="navigation__item" to="/listedcardpage">
+          <NavLink
+            className="navigation__item"
+            activeClassName="active"
+            to="/listedcardpage"
+          >
             My Cards
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="navigation__item" to="/mintcustomcardpage">
+          <NavLink
+            className="navigation__item"
+            activeClassName="active"
+            to="/mintcustomcardpage"
+          >
             Mint Custom Card
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="navigation__item" to="/">
+          <NavLink
+            className="navigation__item"
+            activeClassName="active"
+            to="/"
+          >
             DPC Player Profile
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

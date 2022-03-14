@@ -2,40 +2,43 @@ import Hero from "../components/hero";
 import InfoBox from "../components/infoBox";
 import SquezeBox from "../components/squezeBox";
 import Card from "../components/card";
-import { data, players } from "../utils/data";
+import { view1, players } from "../utils/data";
 import "./ListedCardPage.scss";
 
 function ListedCardPage() {
   return (
     <main className="main">
       <Hero
-        media={data.hero.image}
-        title={data.hero.title}
-        score={data.hero.score}
-        listvalue={data.hero.listvalue}
+        media={view1.hero.image}
+        title={view1.hero.title}
+        score={view1.hero.score}
+        listvalue={view1.hero.listvalue}
+        buttonA={view1.hero.buttonA}
+        buttonB={view1.hero.buttonB}
       />
       <InfoBox
-        title={data.partner.title}
-        logo={data.partner.image}
-        subtitle={data.partner.subtitle}
-        subtitleText={data.partner.subtitleText}
-        description={data.partner.description}
+        title={view1.partner.title}
+        logo={view1.partner.image}
+        subtitle={view1.partner.subtitle}
+        subtitleText={view1.partner.subtitleText}
+        description={view1.partner.description}
       />
       <InfoBox
-        title={data.playerBio.title}
-        subtitle={data.playerBio.subtitle}
-        subtitleText={data.playerBio.subtitleText}
-        description={data.playerBio.description}
+        title={view1.playerBio.title}
+        subtitle={view1.playerBio.subtitle}
+        subtitleText={view1.playerBio.subtitleText}
+        description={view1.playerBio.description}
       />
       <SquezeBox
-        heading={data.playerStats.heading}
-        description={data.playerStats.description}
+        heading={view1.playerStats.heading}
+        description={view1.playerStats.description}
       />
       <SquezeBox
-        heading={data.playerSales.heading}
-        description={data.playerSales.description}
+        heading={view1.playerSales.heading}
+        description={view1.playerSales.description}
       />
       <div className="cards">
+        <h2 className="cards__title">Explore More Cards</h2>
         {players.map(function (player) {
           return (
             <Card
@@ -50,6 +53,11 @@ function ListedCardPage() {
             />
           );
         })}
+        <div className="cards__button-container">
+        <button className="button button__action--fill cards__button">
+          View All
+        </button>
+        </div>
       </div>
     </main>
   );

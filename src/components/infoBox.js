@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactMarkdown from "react-markdown";
 import "./infoBox.scss";
 
 const InfoBox = (props) => {
@@ -25,7 +26,9 @@ const InfoBox = (props) => {
         </div>
       </div>
       <div className="infoBox__right">
-        <p className="infoBox__description">{props.description}</p>
+        <ReactMarkdown className="infoBox__description">
+          {props.description}
+        </ReactMarkdown>
       </div>
     </div>
   );
