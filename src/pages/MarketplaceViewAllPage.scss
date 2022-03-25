@@ -1,0 +1,5 @@
+@import "../assets/scss/styles.scss";
+
+.search {
+    @include flex-wrap();    
+}

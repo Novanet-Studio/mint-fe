@@ -3,6 +3,8 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import ListedCardPage from "./ListedCardPage";
 import MintCustomCardPage from "./MintCustomCardPage";
+import MarketplaceViewAllPage from "./MarketplaceViewAllPage";
+
 import "./Dpc.scss";
 
 function DpcPage() {
@@ -13,6 +15,7 @@ function DpcPage() {
         <Routes>
           <Route path="/listedcardpage" element={<ListedCardPage />} />
           <Route path="/mintcustomcardpage" element={<MintCustomCardPage />} />
+          <Route path="/marketplaceviewallpage" element={<MarketplaceViewAllPage />} />
         </Routes>
       </Router>
       <Footer />

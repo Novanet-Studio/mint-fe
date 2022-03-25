@@ -23,7 +23,7 @@ function MintCustomCardPage() {
         subtitleText={view2.instructions.subtitleText}
         description={view2.instructions.description}
       />
-      <form className="form" name="contact">
+      <form className="form contact__form" name="contact">
         <div className="form__column-a">
           <h3>Custom Content</h3>
           <input

@@ -103,3 +103,18 @@ export const view2 = {
       "Send us your best action and/or posing shots and videos and we will create a custom Digital Player Card for you!\n\nTo create your custom card, we will need photo(s) and clip(s) for your highlight video. **You can either email us the files** with your order number, **or attach them in the form below**.\n\nAfter checkout, you will receive a placeholder NFT while we create your custom card. You will receive a confirmation email and updates regarding your order. You will be notified once your custom card is ready and updated.\n\nReview period/cost of alterations/other terms, accept terms section? Estimated turnaround time.",
   },
 };
+
+export const view3 = {
+  filters: [
+    {
+      id: "1",
+      title: "Tier",
+      group: ["Platinium", "Gold", "Silver", "Basic Elite"],
+    },
+    {
+      id: "2",
+      title: "Sport",
+      group: ["Football", "Basketball", "Water Polo", "Boxing"],
+    },
+  ],
+};

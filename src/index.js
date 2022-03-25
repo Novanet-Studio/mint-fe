@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import Dpc from "./pages/Dpc";
 import reportWebVitals from "./reportWebVitals";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas, faShareNodes, faTag } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, fas, faShareNodes, faTag } from "@fortawesome/free-solid-svg-icons";
 import { fab, faDiscord, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 
-library.add(fab, fas, faTwitter, faDiscord, faShareNodes, faTag);
+library.add(fab, fas, faTwitter, faDiscord, faShareNodes, faTag, faMagnifyingGlass);
 
 ReactDOM.render(
   <React.StrictMode>

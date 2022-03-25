@@ -1,0 +1,20 @@
+@import "../assets/scss/styles.scss";
+
+.searchbox {
+  width: 75%;
+  margin-left: 3vh;
+  button {
+    margin-right: 16px;
+    background: transparent;
+    font-size: 1.4rem;
+    margin-top: -1.3vh;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: white !important;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+}

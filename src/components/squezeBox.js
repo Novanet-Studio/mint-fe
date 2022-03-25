@@ -9,10 +9,10 @@ import "./squezeBox.scss";
 
 const SquezeBox = (props) => {
   return (
-    <Accordion allowZeroExpanded={true}>
+    <Accordion className="accordion accordion__general" allowZeroExpanded={true}>
       <AccordionItem>
         <AccordionItemHeading>
-          <AccordionItemButton>
+          <AccordionItemButton className="accordion__general-button">
             <h3>{props.heading}</h3>
           </AccordionItemButton>
         </AccordionItemHeading>

@@ -1,0 +1,24 @@
+@import "../assets/scss/styles.scss";
+
+.filters {
+  width: 15%;
+  &__form {
+    @include flex-column();
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    input[type="checkbox"] {
+      margin-bottom: 2vh;
+    }
+  }
+}
+
+.accordion {
+  &__filters {
+    padding: .2vh 0.5vw 0.1vw;
+  }
+  &__button {
+    border-width: 0;
+  }
+}

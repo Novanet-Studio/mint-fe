@@ -8,7 +8,7 @@ const Navigation = () => {
         <li>
           <NavLink
             className="navigation__item"
-            activeClassName="active"
+            activeclassname="active"
             to="/"
           >
             Marketplace
@@ -17,7 +17,7 @@ const Navigation = () => {
         <li>
           <NavLink
             className="navigation__item"
-            activeClassName="active"
+            c="active"
             to="/listedcardpage"
           >
             My Cards
@@ -26,7 +26,7 @@ const Navigation = () => {
         <li>
           <NavLink
             className="navigation__item"
-            activeClassName="active"
+            activeclassname="active"
             to="/mintcustomcardpage"
           >
             Mint Custom Card
@@ -35,10 +35,10 @@ const Navigation = () => {
         <li>
           <NavLink
             className="navigation__item"
-            activeClassName="active"
-            to="/"
+            activeclassname="active"
+            to="/marketplaceviewallpage"
           >
-            DPC Player Profile
+            Marketplace
           </NavLink>
         </li>
       </ul>

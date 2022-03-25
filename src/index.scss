@@ -57,9 +57,7 @@ img {
 }
 
 .form {
-  @include flex-wrap();
-  margin-top: 6vh;
-  margin-bottom: 4vh;
+  @include flex-wrap(); 
 
   &__column-a {
     width: 25%;
@@ -85,7 +83,7 @@ img {
   input[type="number"],
   textarea {
     font-weight: 300;
-    width: 82%;
+ 
     padding: 2vh;
     border-style: solid;
     border-color: white;
@@ -103,10 +101,16 @@ img {
     }
   }
 
+  input[type="checkbox"] {
+    height: 2vh;
+    width: 2vh;
+    margin-right: .5vw;
+  }
+
   input[type="submit"] {
     font-size: larger;
     padding: 3vh;
-    background-color: $lightpurple ;
+    background-color: $lightpurple;
   }
 
   input[type="file"] {
@@ -117,7 +121,7 @@ img {
     }
 
     &::before {
-      content: 'Select some files';
+      content: "Select some files";
       color: white;
       display: inline-block;
       background: $purple;
@@ -130,3 +134,55 @@ img {
     }
   }
 }
+
+.accordion {  
+  background-color: $blackOpacity03;
+
+  &__button {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 10px;
+      width: 10px;
+      right: 0;
+      border-bottom: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      transform: rotate(-45deg);
+    }
+
+    &[aria-expanded="true"]::before,
+    &[aria-selected="true"]::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__panel {
+    animation: fadein 0.35s ease-in;
+  }
+
+  &__description {
+    opacity: 0.6;
+  }  
+}
+
+[hidden] {
+  display: none;
+}
+
+/* ---------------- Animation ------------------ */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
