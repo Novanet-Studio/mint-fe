@@ -31,11 +31,21 @@ img {
 
 .button {
   cursor: pointer;
-  padding: 1vh;
-  margin-top: 2vh;
+  padding: 1vh;  
   margin-right: 2vh;
+  margin-bottom: 2vh;
   color: white;
   border: none;
+
+  &__action--fill {
+    background-color: $lightpurple;
+
+  }
+  
+  &__action--white-fill {
+    background-color: White;
+    color: black;
+  }
 
   &__action--fill {
     background-color: $lightpurple;
@@ -102,8 +112,7 @@ img {
   }
 
   input[type="checkbox"] {
-    height: 2vh;
-    width: 2vh;
+
     margin-right: .5vw;
   }
 
@@ -135,44 +144,7 @@ img {
   }
 }
 
-.accordion {  
-  background-color: $blackOpacity03;
 
-  &__button {
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    position: relative;
-
-    &:before {
-      position: absolute;
-      content: "";
-      height: 10px;
-      width: 10px;
-      right: 0;
-      border-bottom: 2px solid currentColor;
-      border-right: 2px solid currentColor;
-      transform: rotate(-45deg);
-    }
-
-    &[aria-expanded="true"]::before,
-    &[aria-selected="true"]::before {
-      transform: rotate(45deg);
-    }
-  }
-
-  &__panel {
-    animation: fadein 0.35s ease-in;
-  }
-
-  &__description {
-    opacity: 0.6;
-  }  
-}
-
-[hidden] {
-  display: none;
-}
 
 /* ---------------- Animation ------------------ */
 
@@ -185,4 +157,5 @@ img {
     opacity: 1;
   }
 }
+
 

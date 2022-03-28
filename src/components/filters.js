@@ -10,11 +10,14 @@ import "./filters.scss";
 const FilterBox = (props) => {
   return (
     <div className="filters">
-      <Accordion className="accordion accordion__filters" allowZeroExpanded={true}>
+      <Accordion
+        className="accordion accordion__filters"
+        allowZeroExpanded={true}
+      >
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
-              <h4>Filters</h4>
+              <h4 className="accordion__title">Filters</h4>
             </AccordionItemButton>
           </AccordionItemHeading>
           <AccordionItemPanel>
@@ -24,25 +27,24 @@ const FilterBox = (props) => {
             >
               {props.filters.map(function (item) {
                 return (
-                  <AccordionItem>
+                  <AccordionItem key={item.id}>
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        <h5>{item.title}</h5>
+                        <h5 className="accordion__subtitle">{item.title}</h5>
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <form className="form filters__form">
                         {item.group.map(function (element) {
                           return (
-                            <div>
+                            <div key={element.id}>
                               <input
                                 type="checkbox"
-                                key={element.id}
-                                id={element}
-                                name={element}
-                                value={element}
+                                id={element.id}
+                                name={element.name}
+                                value={element.name}
                               />
-                              <label for="vehicle1">{element}</label>
+                              <label htmlFor="vehicle1">{element.name}</label>
                             </div>
                           );
                         })}
@@ -51,7 +53,7 @@ const FilterBox = (props) => {
                   </AccordionItem>
                 );
               })}
-              <button className="button button__action--outline">
+              <button className="button button__action--outline filters__button">
                 Clear filter
               </button>
             </Accordion>

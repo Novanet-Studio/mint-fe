@@ -1,15 +1,49 @@
 @import "../assets/scss/styles.scss";
 
 .accordion {
+  background-color: $blackOpacity03;
+
+  &__button {
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 10px;
+      width: 10px;
+      right: 0;
+      border-bottom: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      transform: rotate(-45deg);
+    }
+
+    &[aria-expanded="true"]::before,
+    &[aria-selected="true"]::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__panel {
+    animation: fadein 0.35s ease-in;
+  }
+
+  &__description {
+    opacity: 0.6;
+  }
+
   &__general {
     margin-top: 3vh;
     padding: 4vh 3vw 3vh;
 
     &-button {
       border-style: solid;
-      border-width:  0 0 1px 0 ;
-      
+      border-width: 0 0 1px 0;
+    }
   }
-  
-  }
+}
+
+[hidden] {
+  display: none;
 }

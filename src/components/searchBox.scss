@@ -1,8 +1,7 @@
 @import "../assets/scss/styles.scss";
 
 .searchbox {
-  width: 75%;
-  margin-left: 3vh;
+  width: 80%;
   button {
     margin-right: 16px;
     background: transparent;
@@ -16,5 +15,14 @@
 
   input[type="text"] {
     width: 90%;
+
+    &::placeholder {
+      padding-left: 1.5vw;
+    }
+  }
+
+  &__icon {
+    margin-right: -4.5vw;
+    margin-top: -4vh;
   }
 }

@@ -21,6 +21,7 @@
   &__buttons {
     @include flex-column();
     width: 12.5%;
+    padding-top: 2vh;
   }
 
   &__icon {

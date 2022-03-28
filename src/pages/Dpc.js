@@ -13,9 +13,9 @@ function DpcPage() {
       <Router>
         <Header />
         <Routes>
+        <Route path="/marketplaceviewallpage" element={<MarketplaceViewAllPage />} />
           <Route path="/listedcardpage" element={<ListedCardPage />} />
-          <Route path="/mintcustomcardpage" element={<MintCustomCardPage />} />
-          <Route path="/marketplaceviewallpage" element={<MarketplaceViewAllPage />} />
+          <Route path="/mintcustomcardpage" element={<MintCustomCardPage />} />          
         </Routes>
       </Router>
       <Footer />

@@ -12,7 +12,7 @@ const SquezeBox = (props) => {
     <Accordion className="accordion accordion__general" allowZeroExpanded={true}>
       <AccordionItem>
         <AccordionItemHeading>
-          <AccordionItemButton className="accordion__general-button">
+          <AccordionItemButton className="accordion__button accordion__btngeneral">
             <h3>{props.heading}</h3>
           </AccordionItemButton>
         </AccordionItemHeading>

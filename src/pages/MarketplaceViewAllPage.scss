@@ -1,5 +1,20 @@
 @import "../assets/scss/styles.scss";
 
 .search {
-    @include flex-wrap();    
+  @include flex-wrap();
+
+  &__title {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__tabs {
+    @include flex-center();
+    width: 100%;
+  }
+
+  &__buttons {
+    width: 15%;
+  }
 }
+

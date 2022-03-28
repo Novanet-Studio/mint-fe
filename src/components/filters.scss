@@ -6,19 +6,39 @@
     @include flex-column();
     flex-wrap: wrap;
     margin-top: 2vh;
-    margin-bottom: 2vh;
+
+    label {
+      font-size: 0.8rem;
+    }
 
     input[type="checkbox"] {
       margin-bottom: 2vh;
+      width: 0.8vw;
+      height: 0.8vw;
     }
+  }
+
+  &__button {
+    font-size: 0.8rem;
   }
 }
 
 .accordion {
   &__filters {
-    padding: .2vh 0.5vw 0.1vw;
+    padding: 0.2vh 0.5vw 0.1vh .75vw;
   }
-  &__button {
-    border-width: 0;
+
+  &__item {
+    padding: 0.75vh 0 0.75vh 0;
+  }
+
+  &__title {
+    font-size: 0.85rem;
+    margin-top:1.5vh;
+    margin-bottom: 1.5vh
+  }
+
+  &__subtitle {
+    margin-top: 0;
   }
 }
