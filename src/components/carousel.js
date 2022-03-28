@@ -9,25 +9,17 @@ const Carousel = (props) => {
     <Slider className="carousel" {...props.settings}>
       {props.items.map(function (player) {
         return (
-          <div className="card card-slider" key={player.id}>
-            <img
-              className="card__image"
-              src={player.image.cardImage}
-              alt="Player performing portrait"
-            />
-            <h4 className="card__name">{player.name}</h4>
-            <p className="card__league">{player.league}</p>
-            <p className="card__level">{player.level}</p>
-            <h5 className="card__tier-title">Card Tier</h5>
-            <p className="card__tier-value">{player.tier}</p>
-            <h4 className="card__value">{player.value.toFixed(2)} $</h4>
-            <p className="card__average">
-              {player.average.toFixed(2)} average sale
-            </p>
-            <button className="button button__action--fill card__button">
-              View
-            </button>
-          </div>
+          <Card
+            clase="card-slider"
+            key={player.id}
+            image={player.image}
+            name={player.name}
+            league={player.league}
+            level={player.level}
+            tier={player.tier}
+            value={player.value}
+            average={player.average}
+          />
         );
       })}
     </Slider>

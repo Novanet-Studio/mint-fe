@@ -2,7 +2,7 @@ import "./card.scss";
 
 const Card = (props) => {
   return (
-    <div className="card">
+    <div className={`card ${props.clase}`}>
       <img
         className="card__image"
         src={props.image.cardImage}
