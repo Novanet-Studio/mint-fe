@@ -7,6 +7,10 @@ import Player2img from "../assets/images/player-2.webp";
 import Player3img from "../assets/images/player-3.webp";
 import Player4img from "../assets/images/player-4.webp";
 import Player5img from "../assets/images/player-5.webp";
+import PlayerHightLigth1img from "../assets/images/player-highlight-1.webp";
+import PlayerHightLigth2img from "../assets/images/player-highlight-2.webp";
+import PlayerHightLigth3img from "../assets/images/player-highlight-3.webp";
+import PlayerHightLigth4img from "../assets/images/player-highlight-4.webp";
 
 export const view1 = {
   hero: {
@@ -303,5 +307,24 @@ export const playerQuery = [
     tier: "Lowest Ask",
     value: 175.0,
     average: 175.0,
+  },
+];
+
+export const playerHighligths = [
+  {
+    id: "1",
+    media: { video: PlayerHightLigth1img },
+  },
+  {
+    id: "2",
+    media: { video: PlayerHightLigth2img },
+  },
+  {
+    id: "3",
+    media: { video: PlayerHightLigth3img },
+  },
+  {
+    id: "4",
+    media: { video: PlayerHightLigth4img },
   },
 ];

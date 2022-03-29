@@ -4,30 +4,45 @@
   @include flex-center();
   width: 100%;
   margin-top: 5vh;
-}
-.slick-list {
-  width: 85%;
-  height: 60vh;
+
+  .slick-list {
+    width: 95%;
+    height: 70vh;
+  }
+
+  .slick-slide {
+    width: min-content !important;
+  }
+
+  .slick-next:before {
+    content: "›" !important;
+    font-size: 4rem;
+  }
+
+  .slick-prev:before {
+    content: "‹" !important;
+    font-size: 3.5rem;
+  }
+
+  .card {
+    width: max-content !important;
+
+    &-slider {
+      margin-right: 3.5vw;
+    }
+  }
 }
 
-.slick-slide {
-  width: min-content !important;
-}
+.playerCarousel {
+  width: 40%;
 
-.slick-next:before {
-  content: "›" !important;
-  font-size: 4rem;
-}
+  &__image {
+    width: 5vw;
+  }
 
-.slick-prev:before {
-  content: "‹" !important;
-  font-size: 3.5rem;
-}
-
-.card {
-  width: max-content !important;
-
-  &-slider {
-    margin-right: 3.5vw;
+  .slick-slide {
+    width: 8.5vw !important;
+    height: 7.5vh;
+    margin-right: 2.2vw;
   }
 }

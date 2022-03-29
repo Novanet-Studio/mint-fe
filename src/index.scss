@@ -71,12 +71,16 @@ img {
 
   &__column-a {
     width: 25%;
+    margin-right: 1%;
+
+   
   }
 
   &__column-b {
     @include flex-column();
 
-    width: 75%;
+    width: 74%;
+
   }
 
   input:required,
@@ -93,13 +97,14 @@ img {
   input[type="number"],
   textarea {
     font-weight: 300;
- 
-    padding: 2vh;
+    padding: 2vh 0 2vh 0;
     border-style: solid;
     border-color: white;
     border-width: 1px;
     margin-bottom: 2vh;
     background: none;
+    box-sizing: border-box;
+
 
     &:focus {
       outline: none !important;
@@ -108,6 +113,8 @@ img {
 
     &::placeholder {
       color: white;
+      padding: 2vh;
+      box-sizing: border-box;
     }
   }
 
