@@ -11,5 +11,39 @@
 
 .main {
   margin: 0 auto;
-  width: 80%;
+}
+
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .container {
+    padding: 2vh;
+  }
+}
+
+/*-------------------------------------------- Desktop 1280px --------------------------------------------*/
+@include responsive-min($min-width: 80em) {
+  .main {
+    width: 80%;
+  }
+}
+
+/*-------------------------------------------- Desktop 1366px --------------------------------------------*/
+@include responsive-min($min-width: 85.375em) {
+  .main {
+    width: 84%;
+  }
+}
+
+/*-------------------------------------------- Desktop 1920px --------------------------------------------*/
+@include responsive-min($min-width: 120em) {
+  .main {
+    width: 74%;
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .container {
+    padding: 2vw;
+  }
 }

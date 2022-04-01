@@ -37,7 +37,7 @@ function ListedCardPage() {
         heading={view1.playerSales.heading}
         description={view1.playerSales.description}
       />
-      <div className="cards">
+      <div className="cards listed__cards">
         <h2 className="cards__title">Explore More Cards</h2>
         {players.map(function (player) {
           return (

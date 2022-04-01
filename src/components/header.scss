@@ -30,3 +30,63 @@
     background-color: rgba($color: white, $alpha: 0.5);
   }
 }
+
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .header {
+    display: flex;
+    justify-content: unset;
+    align-items: unset;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__logo {
+      justify-content: center;
+      order: 1;
+      width: 28%;
+    }
+
+    &__rrss {
+      display: flex;
+      justify-content: center;
+      order: 2;
+      width: 40%;
+      padding-top: 6vh;
+      box-sizing: border-box;
+    }
+
+    &__buttons {
+      order: 3;
+      width: 32%;
+    }
+
+    &__icon {
+      margin-right: 2vw;
+    }
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .header {
+    &__list {
+      justify-content: space-around;
+    }
+
+    &__rrss {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 15%;
+    }
+
+    &__icon {
+      margin: 0.5vw;
+      padding: 0.25vw;
+    }
+
+    &__buttons {
+      width: 17.5%;
+    }
+  }
+}

@@ -6,7 +6,7 @@ import "./carousel.scss";
 
 const Carousel = (props) => {
   return (
-    <Slider className="carousel" {...props.settings}>
+    <Slider className={`carousel ${props.clase}`} {...props.config}>
       {props.items.map(function (player) {
         return (
           <Card

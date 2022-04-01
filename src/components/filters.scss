@@ -25,7 +25,7 @@
 
 .accordion {
   &__filters {
-    padding: 0.2vh 0.5vw 0.1vh .75vw;
+    padding: 0.2vh 0.5vw 0.1vh 0.75vw;
   }
 
   &__item {
@@ -34,11 +34,49 @@
 
   &__title {
     font-size: 0.85rem;
-    margin-top:1.5vh;
-    margin-bottom: 1.5vh
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
   }
 
   &__subtitle {
     margin-top: 0;
+  }
+}
+
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .filters {
+    width: 30%;
+    order: 3;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+
+    &__form {
+      label {
+        padding-left: 1vw;
+        line-height: auto;
+      }
+      input[type="checkbox"] {
+        margin-bottom: unset;
+        width: 4vw;
+        height: 4vw;
+        margin-top: 1.5vw;
+      }
+    }
+  }
+
+  .accordion {
+    &__button {
+      &:before {
+        right: 2vw;
+      }
+    }
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .filters {
+    width: 20%;
   }
 }

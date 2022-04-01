@@ -1,6 +1,48 @@
+@import "../assets/scss/styles.scss";
+
 .contact {
+  &__form {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .contact {
     &__form {
-        margin-top: 6vh;
-        margin-bottom: 4vh;
+      .button {
+    
+      }
     }
+  }
+}
+
+/*-------------------------------------------- Desktop 1366px --------------------------------------------*/
+@include responsive-min($min-width: 85.375em) {
+  .contact {
+    &__form {
+      width: 92%;
+    }
+  }
+}
+
+/*-------------------------------------------- Desktop 1600px --------------------------------------------*/
+@include responsive-min($min-width: 100em) {
+  .contact {
+    &__form {
+      width: 80%;
+    }
+  }
+}
+
+/*-------------------------------------------- Desktop 1920px --------------------------------------------*/
+@include responsive-min($min-width: 120em) {
+  .contact {
+    &__form {
+      width: 76%;
+    }
+  }
 }

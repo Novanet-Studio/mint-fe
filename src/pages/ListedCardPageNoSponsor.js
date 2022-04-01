@@ -8,7 +8,7 @@ import "./ListedCardPage.scss";
 function ListedCardPage() {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -23,7 +23,7 @@ function ListedCardPage() {
         buttonA={view1.hero.buttonA}
         buttonB={view1.hero.buttonB}
       />
-      <PlayerCarousel items={playerHighligths} settings={settings} />
+      <PlayerCarousel items={playerHighligths} config={settings} />
       <InfoBox
         title={view1.playerBio.title}
         subtitle={view1.playerBio.subtitle}

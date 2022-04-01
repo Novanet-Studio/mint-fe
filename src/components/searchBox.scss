@@ -3,10 +3,10 @@
 .searchbox {
   width: 80%;
   button {
-    margin-right: 16px;
     background: transparent;
     font-size: 1.4rem;
     margin-top: -1.3vh;
+    margin-right: 1vw;
     padding: 0;
     border: none;
     cursor: pointer;
@@ -15,14 +15,48 @@
 
   input[type="text"] {
     width: 90%;
-
-    &::placeholder {
-      padding-left: 2vw;
-    }
+    padding-left: 2vw;
   }
 
   &__icon {
-    margin-right: -6.5vw;
+    margin-right: -5.5vw;
     margin-top: -4vh;
+  }
+}
+
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .searchbox {
+    width: 100%;
+    order: 2;
+
+    input[type="text"] {
+      width: 98%;
+      padding-left: 8vw;
+    }
+
+    &__icon {
+      margin-right: -14vw;
+    }
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .searchbox {
+    width: 80%;
+
+    button {
+      margin-top: -3vh;
+    }
+
+    input[type="text"] {
+      padding-left: 4vw;
+    }
+
+    &__icon {
+      margin-right: -8vw;
+      font-size: 1.2rem;
+    }
   }
 }

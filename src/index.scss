@@ -31,7 +31,7 @@ img {
 
 .button {
   cursor: pointer;
-  padding: 1vh;  
+  padding: 1vh;
   margin-right: 2vh;
   margin-bottom: 2vh;
   color: white;
@@ -39,9 +39,8 @@ img {
 
   &__action--fill {
     background-color: $lightpurple;
-
   }
-  
+
   &__action--white-fill {
     background-color: White;
     color: black;
@@ -67,20 +66,17 @@ img {
 }
 
 .form {
-  @include flex-wrap(); 
+  @include flex-wrap();
 
   &__column-a {
     width: 25%;
     margin-right: 1%;
-
-   
   }
 
   &__column-b {
     @include flex-column();
 
     width: 74%;
-
   }
 
   input:required,
@@ -97,14 +93,14 @@ img {
   input[type="number"],
   textarea {
     font-weight: 300;
-    padding: 2vh 0 2vh 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     border-style: solid;
     border-color: white;
     border-width: 1px;
     margin-bottom: 2vh;
     background: none;
     box-sizing: border-box;
-
 
     &:focus {
       outline: none !important;
@@ -119,8 +115,7 @@ img {
   }
 
   input[type="checkbox"] {
-
-    margin-right: .5vw;
+    margin-right: 0.5vw;
   }
 
   input[type="submit"] {
@@ -151,8 +146,6 @@ img {
   }
 }
 
-
-
 /* ---------------- Animation ------------------ */
 
 @keyframes fadein {
@@ -165,4 +158,75 @@ img {
   }
 }
 
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  h1 {
+    font-size: 1.6rem;
+  }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    margin-right: unset;
+  }
+
+  .icon {
+    width: 5vw;
+    height: 5vw;
+    padding: 1vw;
+  }
+
+  .form {
+    &__column-a,
+    &__column-b {
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+    }
+
+    &__file {
+      margin-bottom: 2vh;
+    }
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .header,
+  .footer {
+    .icon {
+      width: 2.5vw;
+      height: 2.5vw;
+      padding: 0.5vw;
+    }
+  }
+
+  .form {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 94%;
+    }
+    &__column-a,
+    &__column-b {
+      width: 50%;
+    }
+    &__column-a {
+      margin-right: unset;
+    }
+
+   
+  }
+}

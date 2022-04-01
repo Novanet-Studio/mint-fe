@@ -2,17 +2,8 @@
 
 .carousel {
   @include flex-center();
-  width: 100%;
-  margin-top: 5vh;
-
-  .slick-list {
-    width: 95%;
-    height: 70vh;
-  }
-
-  .slick-slide {
-    width: min-content !important;
-  }
+  width: 96%;
+  margin: 5vh auto;
 
   .slick-next:before {
     content: "›" !important;
@@ -25,24 +16,64 @@
   }
 
   .card {
-    width: max-content !important;
-
     &-slider {
       margin-right: 3.5vw;
     }
   }
 }
 
-.playerCarousel {
-  width: 40%;
-
-  &__image {
-    width: 5vw;
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .carousel {
+    width: 82%;
   }
 
-  .slick-slide {
-    width: 8.5vw !important;
-    height: 7.5vh;
-    margin-right: 2.2vw;
+  .playerCarousel {
+    width: 90%;
+    margin-left: 4vw;
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .playerCarousel {
+    width: 36%;
+    margin-left: 4vw;
+  }
+}
+
+
+/*-------------------------------------------- Desktop 1280px --------------------------------------------*/
+@include responsive-min($min-width: 80em) {
+  .carousel {
+    width: 85%;
+  }
+
+  .playerCarousel {
+    width: 40%;
+  }
+}
+
+/*-------------------------------------------- Desktop 1600px --------------------------------------------*/
+@include responsive-min($min-width: 100em) {
+  .carousel {
+    width: 74%;
+  }
+
+  .playerCarousel {
+    width: 33%;
+    margin-left: 6.5%;
+  }
+}
+
+/*-------------------------------------------- Desktop 1920px --------------------------------------------*/
+@include responsive-min($min-width: 120em) {
+  .carousel {
+    width: 70%;
+  }
+
+  .playerCarousel {
+    width: 32%;
+    margin-left: 8%;
   }
 }

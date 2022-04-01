@@ -47,3 +47,22 @@
       margin-top: 1vh !important;
   }
 }
+
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .card {
+    flex: 0 0 39%;
+    padding: 2.5vh;
+    margin-top: 1.5vh;
+  }
+}
+
+/*-------------------------------------------- Mobile Landscape --------------------------------------------*/
+@include responsive-max($max-width: 46em, $orientation: "landscape") {
+  .card {
+    flex: 0 0 13%;
+    padding: 3.5vh;
+    margin-right: 2vw;
+    
+  }
+}

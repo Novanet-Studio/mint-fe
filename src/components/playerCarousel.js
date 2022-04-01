@@ -5,7 +5,7 @@ import "./carousel.scss";
 
 const PlayerCarousel = (props) => {
   return (
-    <Slider className="playerCarousel" {...props.settings}>
+    <Slider className="playerCarousel" {...props.config}>
       {props.items.map(function (image) {
         return (
           <img

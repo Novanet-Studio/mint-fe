@@ -45,3 +45,25 @@
     margin-top: 0 auto;
   }
 }
+
+/*-------------------------------------------- Mobile Portrait --------------------------------------------*/
+@include responsive-max($max-width: 26em, $orientation: "portrait") {
+  .hero {
+
+    &__media {
+      width: 100%;
+    }
+
+    &__data {
+      width: 100%;
+      margin-top: 2vh;
+      padding-left: unset;
+    }
+
+    &__buttons {
+      .button {
+        margin-right: 3vw;
+      }
+    }
+  }
+}

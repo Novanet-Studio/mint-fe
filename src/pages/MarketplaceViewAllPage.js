@@ -7,11 +7,20 @@ import "./MarketplaceViewAllPage.scss";
 
 function MarketplaceViewAllPage() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <main className="main">
@@ -34,9 +43,9 @@ function MarketplaceViewAllPage() {
           </button>
         </div>
 
-        <Carousel items={playerSlider} settings={settings} />
+        <Carousel clase={"search__carousel"} items={playerSlider} config={settings} />
 
-        <div className="cards">
+        <div className="cards search__cards">
           <h2 className="cards__title">Featured Player Cards</h2>
           {playerQuery.map(function (player) {
             return (
